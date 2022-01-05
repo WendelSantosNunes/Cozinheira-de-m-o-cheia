@@ -1,0 +1,140 @@
+/* Geral */
+
+:root {
+  --color-a-p: #fff;
+  --bg-color: #fcecdd;
+  --bg_header-bg_footer-color: #6b4f4f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: min(100vw, 980px);
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+h2 {
+  text-align: center;
+}
+
+h2::after {
+  content: '';
+  display: block;
+
+  height: 0.1rem;
+  width: 8.625rem;
+
+  margin: 0.5rem auto 0 auto;
+  background-color: var(--bg_header-bg_footer-color);
+}
+
+.separador {
+  margin: 40px 0;
+}
+
+/* body ########################### */
+
+body {
+  background-color: var(--bg-color);
+  color: var(--bg_header-bg_footer-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-a-p);
+}
+
+/* header ######################### */
+
+body header {
+  background-color: var(--bg_header-bg_footer-color);
+  padding: 20px 0;
+  color: var(--color-a-p);
+}
+
+header div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header div ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ul li {
+  list-style: none;
+  padding: 0 1.0625rem 0 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-style: italic;
+  font-weight: normal;
+}
+
+/* Main ############################ */
+
+/* Slide */
+.carrosel-container {
+  width: min(100vw, 50rem);
+  padding-top: 4.0625rem;
+}
+
+.carrosel-slide {
+  display: flex;
+  overflow: hidden;
+}
+
+/* Estou desabilitado o tamanho da tela que foi atribuido pelo pai */
+.slide {
+  flex: none;
+  width: 100%;
+}
+
+.btn-radio {
+  padding: 0.625rem 0 1.875rem 0;
+  text-align: center;
+}
+
+/* Nossos Bolos */
+
+#container-bolos {
+  width: min(100vw, 1200px);
+
+  margin: 0 auto;
+  text-align: center;
+}
+
+#bolos {
+  padding: 50px 0 20px 0;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bolo {
+  margin: 0 15px 50px 15px;
+  width: 362px;
+}
+
+#container-bolos a {
+  color: var(--bg_header-bg_footer-color);
+
+  border: 1px solid var(--bg_header-bg_footer-color);
+  border-radius: 15px;
+
+  padding: 16px 52px;
+}
