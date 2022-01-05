@@ -58,7 +58,7 @@ a {
 
 body header {
   background-color: var(--bg_header-bg_footer-color);
-  padding: 20px 0;
+  padding: 1.25rem 0;
   color: var(--color-a-p);
 }
 
@@ -77,6 +77,10 @@ header div ul {
 ul li {
   list-style: none;
   padding: 0 1.0625rem 0 0;
+}
+
+ul li:hover {
+  font-size: 1.25rem;
 }
 
 h1 {
@@ -111,30 +115,79 @@ h1 {
 
 /* Nossos Bolos */
 
-#container-bolos {
+#container-produtos {
   width: min(100vw, 1200px);
 
   margin: 0 auto;
   text-align: center;
 }
 
-#bolos {
-  padding: 50px 0 20px 0;
+#produtos {
+  padding-top: 50px;
 
   display: flex;
   flex-wrap: wrap;
 }
 
-.bolo {
+.produto {
   margin: 0 15px 50px 15px;
   width: 362px;
 }
 
-#container-bolos a {
+main a {
   color: var(--bg_header-bg_footer-color);
 
   border: 1px solid var(--bg_header-bg_footer-color);
   border-radius: 15px;
 
   padding: 16px 52px;
+}
+
+/* Nossos Salgados e Pizza*/
+
+.salgados,
+.pizza,
+.bolos {
+  justify-content: center;
+}
+
+/* footer ############################ */
+
+footer {
+  background-color: var(--bg_header-bg_footer-color);
+  color: #fff;
+
+  text-align: center;
+
+  margin-top: 50px;
+
+  padding: 40px 0;
+}
+
+/* Resposividade */
+
+@media (max-width: 783px) {
+  header div {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 430px) {
+  h1 {
+    text-align: center;
+  }
+  ul {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 200px) {
+  h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+  main a {
+    padding: 12px;
+  }
 }
