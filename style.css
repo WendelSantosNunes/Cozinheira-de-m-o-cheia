@@ -13,7 +13,7 @@
 }
 
 .container {
-  width: min(100vw, 980px);
+  width: min(90vw, 980px);
   margin: 0 auto;
 }
 
@@ -38,8 +38,9 @@ h2::after {
   background-color: var(--bg_header-bg_footer-color);
 }
 
-.separador {
+.separador img {
   margin: 40px 0;
+  width: 100vw;
 }
 
 /* body ########################### */
@@ -47,6 +48,7 @@ h2::after {
 body {
   background-color: var(--bg-color);
   color: var(--bg_header-bg_footer-color);
+  overflow-x: hidden;
 }
 
 a {
@@ -92,25 +94,49 @@ h1 {
 /* Main ############################ */
 
 /* Slide */
-.carrosel-container {
-  width: min(100vw, 50rem);
-  padding-top: 4.0625rem;
+
+.slides {
+  width: min(90vw, 55rem);
+  margin-top: 4.0625rem;
+
+  text-align: center;
 }
 
-.carrosel-slide {
-  display: flex;
+.slide-items {
+  margin: 0 auto;
   overflow: hidden;
 }
 
-/* Estou desabilitado o tamanho da tela que foi atribuido pelo pai */
-.slide {
-  flex: none;
-  width: 100%;
+.slide-items > * {
+  position: absolute;
+  top: 0px;
+  opacity: 0;
+  pointer-events: none;
 }
 
-.btn-radio {
-  padding: 0.625rem 0 1.875rem 0;
-  text-align: center;
+.slide-items > .active {
+  position: relative;
+  opacity: 1;
+  pointer-events: initial;
+}
+
+#cycles {
+  display: flex;
+  justify-content: center;
+}
+
+.cycle {
+  width: 20px;
+  height: 20px;
+
+  background-color: #ffc288;
+
+  margin: 10px;
+  border-radius: 15px;
+}
+
+.color {
+  background-color: var(--bg_header-bg_footer-color);
 }
 
 /* Nossos Bolos */
@@ -166,7 +192,7 @@ footer {
 
 /* Resposividade */
 
-@media (max-width: 783px) {
+@media (max-width: 800px) {
   header div {
     flex-direction: column;
     justify-content: center;
@@ -177,17 +203,28 @@ footer {
   h1 {
     text-align: center;
   }
+
   ul {
     justify-content: center;
   }
 }
 
 @media (max-width: 200px) {
+  h2 {
+    font-size: 1rem;
+  }
+
   h1 {
     font-size: 24px;
     text-align: center;
   }
+
   main a {
     padding: 12px;
+  }
+
+  .cycle {
+    width: 10px;
+    height: 10px;
   }
 }
