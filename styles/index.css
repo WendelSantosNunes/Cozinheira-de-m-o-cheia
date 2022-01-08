@@ -1,0 +1,90 @@
+/* Slide */
+
+.slides {
+  width: min(90vw, 55rem);
+  margin-top: 4.0625rem;
+
+  text-align: center;
+}
+
+.slide-items {
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slide-items > * {
+  position: absolute;
+  top: 0px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.slide-items > .active {
+  position: relative;
+  opacity: 1;
+  pointer-events: initial;
+}
+
+#cycles {
+  display: flex;
+  justify-content: center;
+}
+
+.cycle {
+  width: 20px;
+  height: 20px;
+
+  background-color: #ffc288;
+
+  margin: 10px;
+  border-radius: 15px;
+}
+
+.color {
+  background-color: var(--bg_header-bg_footer-color);
+}
+
+/* Nossos Bolos */
+
+#container-produtos {
+  width: min(100vw, 1200px);
+
+  margin: 0 auto;
+  text-align: center;
+}
+
+#produtos {
+  padding-top: 50px;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.produto {
+  margin: 0 15px 50px 15px;
+  width: 362px;
+}
+
+main a {
+  color: var(--bg_header-bg_footer-color);
+
+  border: 1px solid var(--bg_header-bg_footer-color);
+  border-radius: 15px;
+
+  font-size: 1.5rem;
+
+  padding: 16px 52px;
+}
+
+main a:hover {
+  color: #fff;
+  background-color: #ffc288;
+}
+
+/* Nossos Salgados e Pizza*/
+
+.salgados,
+.pizza,
+.bolos {
+  justify-content: center;
+}

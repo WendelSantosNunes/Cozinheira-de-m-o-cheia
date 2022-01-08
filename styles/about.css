@@ -1,0 +1,24 @@
+.current::after {
+  content: '';
+  display: block;
+
+  height: 0.1rem;
+  width: 2.7rem;
+
+  margin: 0.2rem auto 0 auto;
+  background-color: #fcecdd;
+}
+
+h2 {
+  margin-top: 1.5rem;
+}
+
+.about-container {
+  display: flex;
+  justify-content: space-around;
+  /* border: 1px solid red; */
+}
+
+.about-container div {
+  width: 500px;
+}
