@@ -10,15 +10,39 @@
 }
 
 h2 {
-  margin-top: 1.5rem;
+  margin: 1.5rem 0;
 }
 
 .about-container {
   display: flex;
-  justify-content: space-around;
-  /* border: 1px solid red; */
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.about-container img {
+  border-radius: 15px;
 }
 
 .about-container div {
   width: 500px;
+}
+
+@media (min-height: 1050px) {
+  footer {
+    position: absolute;
+  }
+}
+
+@media (min-height: 952px) and (max-width: 320px) {
+  footer {
+    position: absolute;
+  }
+}
+
+/* Responsividade ########## */
+@media (max-width: 500px) {
+  .about-container div {
+    width: 90vw;
+  }
 }
