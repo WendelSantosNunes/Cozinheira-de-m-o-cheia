@@ -9,7 +9,7 @@ function display(index, photos) {
 
     main.insertAdjacentHTML('beforeend', html)
 
-    if (index <= 36) {
+    if (index <= 42) {
       index += 1
     } else {
       index = photos
@@ -25,7 +25,7 @@ function photo() {
   display(index, (index += 11))
   index += 1
   click += 1
-  if (click === 2) {
+  if (click === 3) {
     document.querySelector('.most-photos').remove()
   }
 }
