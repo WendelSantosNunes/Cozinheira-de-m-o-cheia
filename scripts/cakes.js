@@ -26,7 +26,6 @@ function photo() {
   display(index, (index += 11 - variavel))
   index += 1
   click += 1
-  console.log(index, click)
   if (click === 3) {
     document.querySelector('.most-photos').remove()
   }
