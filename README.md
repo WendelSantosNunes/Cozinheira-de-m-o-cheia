@@ -1,6 +1,6 @@
 # Cozinheira-de-mão-cheia
 
-![Página Principal](https://github.com/WendelSantosNunes/Cozinheira-de-m-o-cheia/blob/main/assets/ImgReadme/img.png?raw=true)
+![Página Principal](https://github.com/WendelSantosNunes/Cozinheira-de-m-o-cheia/blob/main/assets/ImgReadme/Pagina-Principal.png)
 
 ---
 
