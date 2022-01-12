@@ -46,17 +46,18 @@
 
 /* Nossos Bolos */
 
-#container-produtos {
+.container-produtos {
   width: min(100vw, 1200px);
 
   margin: 0 auto;
   text-align: center;
 }
 
-#produtos {
+.produtos {
   padding-top: 50px;
 
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
