@@ -18,6 +18,10 @@ main {
   text-align: center;
 }
 
+h2 {
+  margin: 0 0 1.5rem 0;
+}
+
 main img {
   height: 400px;
   width: 362px;
@@ -55,7 +59,7 @@ main a:hover {
 }
 
 /* Responsividade ########## */
-@media (min-width: 700px) and (min-height: 1185px) {
+@media (min-width: 734px) and (min-height: 3027px) {
   footer {
     position: absolute;
   }

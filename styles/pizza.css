@@ -17,6 +17,10 @@ main {
   text-align: center;
 }
 
+h2 {
+  margin: 1.5rem 0;
+}
+
 .pizza-principal {
   margin-top: 50px;
   text-align: center;
