@@ -57,6 +57,9 @@ main a:hover {
 }
 
 @media (max-width: 800px) {
+  footer {
+    position: absolute;
+  }
   img {
     width: 90%;
   }

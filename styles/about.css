@@ -28,13 +28,20 @@ h2 {
   width: 500px;
 }
 
-@media (min-height: 1050px) {
+.about p {
+  margin: 10px 0;
+
+  font-size: 25px;
+  text-align: justify;
+}
+
+@media (min-height: 1518px) {
   footer {
     position: absolute;
   }
 }
 
-@media (min-height: 952px) and (max-width: 320px) {
+@media (min-height: 1579px) and (max-width: 320px) {
   footer {
     position: absolute;
   }
