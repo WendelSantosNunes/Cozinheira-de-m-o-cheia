@@ -6,9 +6,6 @@ let index = 1,
 
 function addImage(index, photos) {
   while (index <= photos) {
-    // let html = `<a href="./cakes-orders.html"><img src="./assets/bolo${index}.jpeg" alt="Fotos de bolos" onclick="SalveImg(${index})" /></a>`
-
-    //     // main.insertAdjacentHTML('beforeend', html)
     const img = document.createElement('img')
     const a = document.createElement('a')
 
@@ -29,14 +26,14 @@ verMais.addEventListener('click', function (event) {
   event.preventDefault()
 
   let variavel = 0
-  if (click === 2) {
-    variavel = 6
+  if (click === 3) {
+    variavel = 3
   }
 
   addImage(index, (index += 11 - variavel))
   index += 1
   click += 1
-  if (click === 3) {
+  if (click === 4) {
     document.querySelector('.most-photos').remove()
   }
 })
