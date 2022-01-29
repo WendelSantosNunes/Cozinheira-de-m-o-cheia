@@ -9,9 +9,9 @@ function addImage(index, photos) {
     const img = document.createElement('img')
     const a = document.createElement('a')
 
-    img.setAttribute('src', `/assets/bolo${index}.jpeg`)
+    img.setAttribute('src', `./assets/bolo${index}.jpeg`)
     img.setAttribute('onclick', `SalveImg(${index})`)
-    a.setAttribute('href', '/cakes-orders')
+    a.setAttribute('href', './cakes-orders.html')
     a.setAttribute('alt', 'Fotos de bolos')
     a.appendChild(img)
     main.appendChild(a)
