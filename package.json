@@ -1,0 +1,17 @@
+{
+  "name": "teste",
+  "version": "1.0.0",
+  "description": "![Página Principal](https://github.com/WendelSantosNunes/Cozinheira-de-m-o-cheia/blob/main/assets/ImgReadme/Pagina-Principal.png)",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "nodemon ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
+    "nodemon": "^2.0.15"
+  }
+}
